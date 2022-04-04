@@ -26,4 +26,4 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Run SonaqCloud
-        run: org.sonarsource.scanner.maven:sonar
+        run: mvn org.sonarsource.scanner.maven:sonar
