@@ -43,5 +43,5 @@ jobs:
           application_name: test-aws
           environment_name: Testaws-env
           version_label: ${{github.SHA}}
-          region: eu-west-2
+          region: us-east-1
           deployment_package: test-aws-0.0.1-SNAPSHOT.jar
