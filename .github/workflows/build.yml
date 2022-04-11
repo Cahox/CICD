@@ -17,7 +17,7 @@ jobs:
         uses: okteto/actions/build@v1
         with:
           token: ${{ secrets.OKTETO_TOKEN }}
-          tag: ${{ secrets.DOCKER_USERNAME }}/hello-world:${{ github.sha }}
+          tag: cahox/hello-world:${{ github.sha }}
 
       - name: Get Kubeconfig
         uses: okteto/actions/namespace@v1
