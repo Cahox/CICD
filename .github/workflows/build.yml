@@ -47,14 +47,14 @@ jobs:
       - name: Login
         uses: actions-hub/docker/login@master
         env:
-          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_USERNAME: cahox
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build
         uses: okteto/actions/build@v1
         with:
           token: ${{ secrets.OKTETO_TOKEN }}
-          tag: ${{ secrets.DOCKER_USERNAME }}/ayo
+          tag: cahox/test
 
       - name: Get Kubeconfig
         uses: okteto/actions/namespace@v1
